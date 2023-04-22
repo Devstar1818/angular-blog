@@ -1,0 +1,16 @@
+@use 'src/base'
+    
+.container__articles
+    max-width: 100vw
+    min-height: 80vh
+    padding: 2rem
+    
+    @include base.displayGrid(repeat(1, 100%), start, start)
+
+    @media screen and (min-width: base.$md)
+        @include base.displayGrid(repeat(2, 50%), start, start)
+        padding: 2rem 4rem
+        gap: 2rem
+        
+    .articles__others
+        @include base.displayFlex(row wrap, flex-start, flex-start, 1.5rem)

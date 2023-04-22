@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap")
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap")
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css")
+
+
+// Breakpoints
+$sm: 576px
+$md: 768px
+$lg: 1024px
+$xl: 1200px
+$xxl: 1400px
+
+// Font
+$font-family-title: 'Poppins', Arial, sans-serif
+$font-family-paragraph: 'Inter', Verdana, sans-serif
+
+// Colors
+$green-400: #76FF03
+$green-300: #67df05
+
+$black: #060c04
+$white: #FCFCFC
+$light: #F8F9FA
+$dark: #0e1c0a
+
+$gray-100: #EAEAEA
+$gray-200: #DEE2E6
+$gray-300: #D1D5D8
+$gray-400: #8B8B8B
+$gray-500: #2D3037
+$gray-600: #212327
+
+$green-400-transparent: #76FF03BF
+$gray-600-transparent: #212327BF
+
+// Display Flex
+@mixin displayFlex($flex-flow, $justify-content, $align-items, $gap)
+    display: flex
+    flex-flow: $flex-flow 
+    justify-content: $justify-content
+    align-items: $align-items
+    gap: $gap
+
+// Display Grid
+@mixin displayGrid($grid-template-columns, $justify-content, $align-content)
+    display: grid
+    gap: 1rem
+    grid-template-columns: $grid-template-columns
+    justify-content: $justify-content
+    align-content: $align-content

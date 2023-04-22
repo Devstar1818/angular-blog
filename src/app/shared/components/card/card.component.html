@@ -1,0 +1,17 @@
+<article [class]="'card' + ' ' + cardType">
+    <div class="card__cover">
+        <img class="cover-img" [src]="cardCover" [alt]="cardCoverAlt">
+    </div>
+
+    <div class="card__information">
+        <div class="body">
+            <a [routerLink]="['content', id]">
+                <h3 class="title">{{ cardTitle }}</h3>
+            </a>
+            <p class="description">{{ cardDescription }}</p>
+        </div>
+        <div class="footer">
+            <a [routerLink]="['content', id]" >Ler mais</a>
+        </div>
+    </div>
+</article>

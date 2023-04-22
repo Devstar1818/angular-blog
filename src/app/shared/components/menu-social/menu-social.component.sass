@@ -1,0 +1,23 @@
+@use 'src/base'
+
+.menu
+    list-style: none
+    user-select: none
+    @include base.displayFlex(row, flex-start, center, .5rem)
+    
+    &__item
+        @include base.displayFlex(row, center, center, 0)
+        width: 2.2rem
+        height: 2.2rem
+        aspect-ratio: 1 / 1
+
+        background: base.$gray-600-transparent
+        border-radius: 50rem
+        padding: .5rem
+
+        .menu__link
+            color: base.$gray-400
+            font-size: 1.25rem
+
+            &:hover
+                color: base.$white

@@ -1,0 +1,13 @@
+@use 'src/base'
+
+footer
+    width: 100%
+    padding: 1rem
+    @include base.displayFlex(column, center, center, 1rem)
+    
+    .text
+        margin-top: 0.8rem 
+    .text, i
+        font-family: base.$font-family-paragraph
+        font-size: .895rem
+        color: var(--paragraph-color) 

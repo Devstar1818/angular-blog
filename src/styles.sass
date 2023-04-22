@@ -1,0 +1,50 @@
+@use 'base'
+
+
+:root 
+  --primary-color: #{base.$green-400}
+  --secondary-color: #{base.$green-300}
+
+  --title-color: #{base.$white}
+  --paragraph-color: #{base.$gray-400}
+  --border-color: #{base.$gray-600}
+    
+html
+    scroll-behavior: auto 
+
+* 
+    margin: 0 
+    padding: 0 
+    box-sizing: border-box 
+
+    // Scrollbar Firefox
+    scrollbar-width: thin
+    scrollbar-color: var(--border-color) transparent
+
+body
+  background: black
+  font-family: base.$font-family-paragraph
+
+a
+  color: var(--paragraph-color)
+  text-decoration: none
+
+img
+  pointer-events: none
+
+::selection
+    background-color: base.$gray-600
+
+::-webkit-scrollbar
+    width: 0.4rem
+
+::-webkit-scrollbar-track 
+    background-color: transparent
+
+::-webkit-scrollbar-thumb 
+    background: var(--border-color)
+    border-radius: 50rem
+
+hr
+  border: .1rem solid var(--border-color)
+  width: 95%

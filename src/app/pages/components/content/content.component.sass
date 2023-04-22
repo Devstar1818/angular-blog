@@ -1,0 +1,19 @@
+@use 'src/base'
+
+.container__content
+    width: 100%
+    padding: 0 2rem
+    color: base.$white
+    @include base.displayFlex(column, center, center, 1.5rem)
+
+    .content__cover > img
+        width: 100vw
+        height: 14rem
+        object-fit: cover
+        object-position: center
+
+
+    .content__body
+        min-height: 30vh
+        @include base.displayFlex(column, flex-start, center, 1.5rem)
+        margin-top: 15px
